@@ -11,11 +11,9 @@ package domein;
  */
 public class DomeinController {
     
-    public String maakSpeler(String name){
+    public void maakSpeler(String name){
         if(name.equals("Bart")){
-            return name + "is een mongool";
+            System.out.println(name + "is een mongool");
         }
-        return null;
     }
-
 }
