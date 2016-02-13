@@ -5,15 +5,45 @@
  */
 package domein;
 
+import domein.language.Dutch;
+import domein.language.English;
+import domein.language.French;
+import domein.language.Language;
+
 /**
  *
  * @author BelgoBits
  */
 public class DomeinController {
+    private Language taal;
+    
+    public DomeinController(){
+        
+    }
     
     public void maakSpeler(String name){
         if(name.equals("Bart")){
             System.out.println(name + "is een mongool");
         }
+    }
+    /*
+    public void setLanguage(String language){
+        if(language.equals("English")){
+            setLanguage(new English());
+        }
+        if(language.equals("French")){
+            setLanguage(new French());
+        }
+        if(language.equals("Dutch")){
+            setLanguage(new Dutch());
+        }
+    }
+    */
+    public void setLanguage(Language language){
+        taal = language;
+    }
+    
+    public Language getLanguage(){
+        return taal;
     }
 }
