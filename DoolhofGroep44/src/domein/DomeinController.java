@@ -23,7 +23,7 @@ public class DomeinController {
     
     public void maakSpeler(String name){
         if(name.equals("Bart")){
-            System.out.println(name + "is leuk!");
+            System.out.println(name + "is leuk");
         }
     }
     /*
