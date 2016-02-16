@@ -18,7 +18,7 @@ public class DomeinController {
     private Language taal;
     
     public DomeinController(){
-        
+        String test;
     }
     
     public void maakSpeler(String name){
